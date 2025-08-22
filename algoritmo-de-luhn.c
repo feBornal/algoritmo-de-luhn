@@ -18,7 +18,7 @@ int main() {
 	cardValidation = luhnAlgorithm(creditCard, totalDigits);
 	banner = cardBanner(creditCard, totalDigits);
 	
-	if (luhnAlgorithm(creditCard, totalDigits) % 10 != 0) {
+	if (cardValidation % 10 != 0) {
 		printf("Cartão INVÁLIDO\n");
 	} else if (banner == 1 && cardValidation % 10 == 0) {
 		printf("AMERICAN EXPRESS. Válido\n");
